@@ -11,39 +11,34 @@ variable "sshport" {
     default = 22
 }
 #Boolean var exmaple
+#Boolian will be used in times we want to generate loops for our terraform code.
+#Boolian is not commonly used in terraform
 variable "enabled" {
-    default = true
+    default = true / false
 }
-
+#List var example.
+#Lists are the most common variables in terraform code.
+#In lists we can add both numbers and strings.
 variable "mylist" {
   type = list(string)
-    default = [ "value1", "value2", "value3" ]
+    default = [ "value1", 443 , "value3" ]
 }
-
+#Maps are key vaule pairs.
+#You can use maps to set variables in advance.
+#You can use the variables set on map multiple times in your code and it can save you a lot of time.
 variable "mymapping" {
   type = map
   default = {
     key1 = "value1"
     key2 = "value2"
-    key3 = "value3"
+    key3 = 22
   }
 }
-
+#Input var example.
+#We can use input variables when we want to set our names manually when creating new resources.
 variable "inputname" {
   type = string
-  description = "Set the name of the VPC"
-}
-
-resource "aws_vpc" "demo-vpc" {
-    cidr_block = "10.0.0.0/16"
-
-    tags = {
-        Name = var.inputname
-    }
-}
-
-output "vpcid" {
-  value = aws_vpc.myvpc.id
+  description = "Please enter the name of your vpc:"
 }
 
 variable "mytuple" {

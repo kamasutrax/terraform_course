@@ -1,6 +1,6 @@
 Before we get started lets go over the basic codes used in terraform.
 
-First of remember to always create a folder for every code you create
+First of remember to always create a folder for every code you create.
 In order to init our terraform code in a specific directory.
 
 After you *.tf file is ready you will want to first of all use the code -- terraform init
