@@ -23,7 +23,12 @@ resource "aws_vpc" "demo-vpc" {
 
 #Outputting the vpc name.
 output "vpcid" {
-  value = aws_vpc.myvpc.id
-}
+    #This is one example of how to use the output.
+    #Different resource types require different code, for now we will learn how to output the vpcname.
+    #aws_vpc pointing to the resource type.
+    #demo-vpc pointing to the name of the resource.
+    #id is the attribute we want to output.
+  value = aws_vpc.demo-vpc.id
+} 
 
 

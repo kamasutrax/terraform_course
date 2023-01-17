@@ -21,7 +21,7 @@ variable "enabled" {
 #In lists we can add both numbers and strings.
 variable "mylist" {
   type = list(string)
-    default = [ "value1", 443 , "value3" ]
+    default = [ "value1", "value2" , "value3" ]
 }
 #Maps are key vaule pairs.
 #You can use maps to set variables in advance.
@@ -41,11 +41,16 @@ variable "inputname" {
   description = "Please enter the name of your vpc:"
 }
 
+#Tuples are similar to a list but in tuple we can use both strings and numbers.
+#We will usually use strings but there are exeptions.
 variable "mytuple" {
   type = tuple([string , number . string])
   default = ["cat" , 1 , "dog"]
 }
 
+#Object variables are similiar to map vairables.
+#With the exception of been able to use different data types.
+#
 variable "myobject" {
   type = object({name = string, port = list(number)})
   default {
