@@ -9,6 +9,6 @@ This git is intended for self education of the Terraform toolkit.
 We will go through all the basic and advanced features of this fantastic toolkit.
 
 For the best practice of self learning please try and write your own codes instead of simply copy/pasting.
-Remember the best way to practice is repetetivnece.
+Remember the best way to practice is repetetivness.
 
 Hope this course helps you to best of your needs. Lets get started.
