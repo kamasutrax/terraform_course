@@ -1,4 +1,4 @@
-#Choose the provider to use
+#Choose the provider & region
 provider "aws" {
   region = "eu-central-1"
 }
