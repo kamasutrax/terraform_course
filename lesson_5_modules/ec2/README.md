@@ -1,0 +1,1 @@
+In this folder we will create a new ec2.tf file and add some variables to it and see how we can manipulate this code into our main.tf file.
